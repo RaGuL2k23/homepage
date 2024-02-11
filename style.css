@@ -133,7 +133,10 @@ footer {
 @media (max-width: 850px) {
   /*tab header*/
   footer{
-    flex-wrap: wrap;
+    /* flex-wrap: wdrap; */
+    & img.myPhotoFoot{max-width: 190px;
+      
+    }
   }
 
   header {
