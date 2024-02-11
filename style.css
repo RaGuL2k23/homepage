@@ -132,12 +132,7 @@ footer {
 
 @media (max-width: 850px) {
   /*tab header*/
-  footer{
-    /* flex-wrap: wdrap; */
-    & img.myPhotoFoot{max-width: 190px;
-      
-    }
-  }
+   
 
   header {
     display: block;
@@ -197,9 +192,9 @@ div.box {
     gap: 6px;
   }
 
-  & img.myPhoto {
+  & img.myPhotoFoot {
     float: right;
-    width: 200px;
+    max-width: 200px;
     height: 400px;
     object-position: 53%;
 
