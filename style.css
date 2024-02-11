@@ -45,9 +45,9 @@
       font-size: 44px;
       font-size: 44px;
       position: absolute;
-      top: 100%;
+      top: 95%;
       left: 45%;
-      color: wheat;
+      color: rgb(29, 29, 27);
       font-family: playfair;
     }
     & .aboutMe {
@@ -119,15 +119,15 @@ footer {
     font-size: 44px;
     font-size: 44px;
     position: absolute;
-    top: 284px;
-    left: 186px;
-    color: wheat;
+    top: 50%;
+    left: 30%;
+    color: rgb(254, 253, 252);
     font-family: playfair;
   }
 }
 
 .aboutMe {
-  background-color: rgb(209, 201, 201);
+  background-color: rgb(253, 253, 253);
   padding: 1rem;
   min-width: 100px;
 }
