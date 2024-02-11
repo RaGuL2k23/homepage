@@ -10,7 +10,7 @@
   width: 110%;
   height: 55rem;
   transform: translateY(calc(-33rem + 30vw)) skewY(-10deg);
-    transform-origin: top left;  
+  transform-origin: top left;
   z-index: -2;
 }
 @media (width<=270px) {
@@ -19,78 +19,80 @@
   }
 }
 
+@media (width<=510px) {
+  /*, (height<=500px){mob *  610*/
+  header.head,
+  footer {
+    /*aligns in the center */
+    justify-self: center;
+    align-self: center;
+    max-width: 1000px;
+    display: flex;
 
-      @media (width<=610px) {
-        /*, (height<=500px){mob */
-          header.head,
-      footer {
-        /*aligns in the center */
-        justify-self: center;
-        align-self: center;
-        max-width: 1000px;
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;
-        
-        
-        & img.myPhoto {
-          max-width: 400px;
-        }
-        & .img-container{
-          position: relative;
-          padding: 1rem 1rem .4rem 1rem;
-        }
+    justify-content: center;
+    align-items: center;
 
-        & .name {
-          font-size: 44px;
-          font-size: 44px;position: absolute;
-          bottom:0;
-          left: 50%;
-          color: wheat;
-          font-family: playfair;
-        }
-        & .aboutMe{margin: 0;}
-      }
+    & img.myPhoto {
+      max-width: 400px;
+    }
+    & .img-container {
+      position: relative;
+      padding: 1rem 1rem 0.4rem 1rem;
+    }
 
-        header,
-        footer {
-          flex-wrap: wrap;
-        }
-        /* .back{display: none;} */
-        body {
-          padding: 0 0 0 1.5rem;
-        }
-        footer {
-          & .icons {
-            display: flex;
-            justify-content: center;
-            gap: 6px;
-          }
-        }
-        main {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          
-        }
-        .grid {
-          /*to make two columns for tabs as possible as  it could 
+    & .name {
+      font-size: 44px;
+      font-size: 44px;
+      position: absolute;
+      top: 100%;
+      left: 45%;
+      color: wheat;
+      font-family: playfair;
+    }
+    & .aboutMe {
+      margin: 0;
+    }
+  }
+
+  header,
+  footer {
+    flex-wrap: wrap;
+  }
+  /* .back{display: none;} */
+  body {
+    padding: 0 0 0 1.5rem;
+  }
+  footer {
+    & .icons {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+    }
+    & img.myPhotoFoot {
+      max-width: 300px;
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid {
+    /*to make two columns for tabs as possible as  it could 
               or say try to make boxes of 250px of boxes for tab size*/
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-        & .box {
-          width: 300px;
-        }
-        img.myPhotoFooter {
-          width: 200px;
-        }
-        header {
-          margin: 0 auto;
-        }
-      }
-
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  & .box {
+    width: 300px;
+  }
+  img.myPhotoFooter {
+    width: 200px;
+  }
+  header {
+    margin: 0 auto;
+  }
+}
 
 header,
 footer {
@@ -99,23 +101,23 @@ footer {
   align-self: center;
   max-width: 1000px;
   display: flex;
-   
+
   justify-content: center;
   align-items: center;
-  
-  
+
   & img.myPhoto {
     width: 450px;
   }
-  & .img-container{
+  & .img-container {
     position: relative;
-    padding: 1rem 1rem .4rem 1rem;
+    padding: 1rem 1rem 0.4rem 1rem;
   }
 
   & .name {
     font-size: 44px;
-    font-size: 44px;position: absolute;
-    top:284px;
+    font-size: 44px;
+    position: absolute;
+    top: 284px;
     left: 186px;
     color: wheat;
     font-family: playfair;
@@ -127,41 +129,47 @@ footer {
   padding: 1rem;
   min-width: 100px;
 }
- 
+
 @media (max-width: 850px) {
   /*tab header*/
-   
-   header {
-    
-    display:block;border:  3px solid red;}
+  footer{
+    flex-wrap: wrap;
+  }
 
-   .img-container{float: left;display:block;
- & img.myPhoto{ 
-   max-width: 400px; 
-  
- }}
- 
- header .aboutMe {
-  display: block;
-  background-color: white;
- 
-   
-  gap: 20px;
-     text-align: left;  
-  box-shadow: 2px 2px 10px gray;
-margin-left: 10vmin;margin-top: 10vmin;
-  
-  padding-top: 50px;
-  padding-bottom: 80px;
-}
-  span.name{     position: relative;
+  header {
+    display: block;
+  }
+
+  .img-container {
+    float: left;
+    display: block;
+    & img.myPhoto {
+      max-width: 400px;
+    }
+  }
+
+  header .aboutMe {
+    display: block;
+    background-color: white;
+
+    gap: 20px;
+    text-align: left;
+    box-shadow: 2px 2px 10px gray;
+    margin-left: 10vmin;
+    margin-top: 10vmin;
+
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  span.name {
+    position: relative;
     top: 33px;
     left: 44px;
-  color: rgb(239, 82, 35);font-size: 44px;}
+    color: rgb(239, 82, 35);
+    font-size: 44px;
+  }
 
- 
-
- /*tab*/
+  /*tab*/
 
   main {
     display: grid;
@@ -197,7 +205,9 @@ div.box {
 }
 
 @media (min-width: 1000px) {
-  header.head{display: flex;}
+  header.head {
+    display: flex;
+  }
   main {
     & h2 {
       margin-left: 10vmin;

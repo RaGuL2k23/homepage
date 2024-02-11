@@ -277,7 +277,7 @@
       <picture class="pic">
         <source media="(max-width: 550px)" srcset="images/cropp.jpg" />
         <source media="(min-width: 600px)" srcset="images/myPhot2.jpg" />
-        <img class="myPhoto" src="images/cropp.jpg" alt="" />
+        <img class="myPhotoFoot myphoto" src="images/cropp.jpg" alt="" />
       </picture>
     </footer>
   </body>
@@ -285,6 +285,7 @@
 
 <style>
 
+  *{box-sizing: border-box;}
   footer#foot {
     width: 100vw;
     padding: 2.4rem;
@@ -342,6 +343,7 @@
     column-gap: 1rem;
 
     & .box {
+      padding: 10px;
       transition:
         transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
         box-shadow 0.44s;
