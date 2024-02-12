@@ -457,5 +457,5 @@ a svg,
 @font-face {
   /* should always look for bold it seems*/
   font-family: "playfair";
-  src: url("font/PlayfairDisplay-Bold.ttf");
+  src: url("/font/PlayfairDisplay-Bold.ttf");
 }
