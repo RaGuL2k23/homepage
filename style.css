@@ -144,7 +144,7 @@ footer {
     float: left;
     display: block; 
     & img.myPhoto {
-      height: 800px; object-fit: cover;object-position: 55%;
+      height: 700px; object-fit: cover;object-position: 55%;
       max-width: 400px;
     }
   }

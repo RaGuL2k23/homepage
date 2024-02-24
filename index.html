@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="normalize.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script  defer src="script.js"></script>
     <title>Document</title>
   </head>
   <body>  <div class="back"></div>
@@ -406,36 +407,47 @@
     flex-direction: column;
     gap: 150px;
   }
-  .box {
-    animation: 2s slide-in ease;
+  /*transition on scroll  effects*/
+  header{
+    opacity: 0;
+    transition: all 2s ease;
   }
-  @keyframes slide-in {
+  header.visible{
+    opacity: 1;
+  }
+   main,footer {
+   /* animation: 2s slide-in ease;*/
+    opacity: 0;
+    transform:    translateY( 150px)  ;
+    transition: all 2s    ease;
+  }
+  main.active,footer.active{
+    opacity: 1;
+    transform: translateY(0px);
+
+   
+  }
+  /* @keyframes slide-in {
     from {
       opacity: 0.6;
       position: relative;
       visibility: hidden;
-      left: -1000px;
+      
     }
-    20% {
-      opacity: 1;
-    }
+    
     50% {
-      left: 50%;
+       
       visibility: visible;
     }
-    85% {
-      transform: scale(1.2);
-    }
-    90% {
-      transform: scale(1.05);
-    }
+    
+    
 
     to {
       transform: scale(1);
       position: static;
       opacity: 1;
     }
-  }
+  } */
 
   a svg,
   [src*=".svg"] {
